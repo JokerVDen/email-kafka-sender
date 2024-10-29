@@ -1,0 +1,29 @@
+{
+  "name": "jokervden/email-kafka-sender",
+  "description": "Email kafka sender package for Laravel",
+  "require": {
+    "php": "^8.2|^8.3",
+    "laravel/framework": "^10.0|^11.0",
+    "mateusjunges/laravel-kafka": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "JokerVDen\\EmailKafkaSender\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JokerVDen\\EmailKafkaSender\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "JokerVDen\\EmailKafkaSender\\Providers\\EmailKafkaSenderServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^9.5"
+  }
+}
